@@ -1,0 +1,47 @@
+{
+  "name": "spotify-audio-element",
+  "version": "0.1.0",
+  "description": "A custom element for the Spotify player with an API that aims to match the `<audio>` API",
+  "type": "module",
+  "main": "spotify-audio-element.js",
+  "files": [],
+  "repository": "luwes/spotify-audio-element",
+  "author": "Wesley Luyten <me@wesleyluyten.com> (https://wesleyluyten.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/luwes/spotify-audio-element#readme",
+  "bugs": {
+    "url": "https://github.com/luwes/spotify-audio-element/issues"
+  },
+  "scripts": {
+    "lint": "npx eslint *.js",
+    "test": "wet run",
+    "dev": "wet serve"
+  },
+  "devDependencies": {
+    "wet-run": "^0.0.8"
+  },
+  "eslintConfig": {
+    "root": true,
+    "globals": {
+      "globalThis": "writable"
+    },
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    }
+  },
+  "keywords": [
+    "spotify",
+    "audio",
+    "player",
+    "web component",
+    "custom element"
+  ]
+}
