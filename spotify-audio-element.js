@@ -109,8 +109,7 @@ class SpotifyAudioElement extends HTMLElement {
         this.shadowRoot.append(iframe);
       }
 
-      await loadScript(API_URL, API_GLOBAL, API_GLOBAL_READY);
-      const Spotify = self[API_GLOBAL];
+      const Spotify = await loadScript(API_URL, API_GLOBAL, API_GLOBAL_READY);
 
       this.api = await new Promise((resolve) =>
         Spotify.createController(iframe, this.#options, resolve));
@@ -323,7 +322,7 @@ async function loadScript(src, globalName, readyFnName) {
   return (loadScriptCache[src] = new Promise(function (resolve, reject) {
     const script = document.createElement('script');
     script.src = src;
-    const ready = () => resolve(self[globalName]);
+    const ready = (api) => resolve(api);
     if (readyFnName) (self[readyFnName] = ready);
     script.onload = () => !readyFnName && ready();
     script.onerror = reject;

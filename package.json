@@ -13,29 +13,12 @@
     "url": "https://github.com/luwes/spotify-audio-element/issues"
   },
   "scripts": {
-    "lint": "npx eslint *.js",
-    "test": "wet run",
+    "lint": "npx eslint spotify-audio-element.js -c ./node_modules/wet-run/.eslintrc.json",
+    "test": "wet test",
     "dev": "wet serve"
   },
   "devDependencies": {
-    "wet-run": "^0.0.8"
-  },
-  "eslintConfig": {
-    "root": true,
-    "globals": {
-      "globalThis": "writable"
-    },
-    "env": {
-      "browser": true,
-      "es6": true
-    },
-    "extends": [
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2022,
-      "sourceType": "module"
-    }
+    "wet-run": "^1.2.0"
   },
   "keywords": [
     "spotify",
