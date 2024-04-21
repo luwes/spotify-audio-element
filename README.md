@@ -1,7 +1,9 @@
 # `<spotify-audio>`
 
-[![Version](https://img.shields.io/npm/v/spotify-audio-element?style=flat-square)](https://www.npmjs.com/package/spotify-audio-element) 
-[![Badge size](https://img.badgesize.io/https://cdn.jsdelivr.net/npm/spotify-audio-element/+esm?compression=gzip&label=gzip&style=flat-square)](https://cdn.jsdelivr.net/npm/spotify-audio-element/+esm)
+[![NPM Version](https://img.shields.io/npm/v/spotify-audio-element?style=flat-square&color=informational)](https://www.npmjs.com/package/spotify-audio-element) 
+[![NPM Downloads](https://img.shields.io/npm/dm/spotify-audio-element?style=flat-square&color=informational&label=npm)](https://www.npmjs.com/package/spotify-audio-element) 
+[![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/spotify-audio-element?style=flat-square&color=%23FF5627)](https://www.jsdelivr.com/package/npm/spotify-audio-element)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/spotify-audio-element?style=flat-square&color=success&label=gzip)](https://bundlephobia.com/result?p=spotify-audio-element) 
 
 A [custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) 
 for the Spotify player with an API that aims to match the 
